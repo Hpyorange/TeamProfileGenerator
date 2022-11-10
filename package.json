@@ -16,8 +16,10 @@
     "url": "https://github.com/Hpyorange/TeamProfileGenerator/issues"
   },
   "homepage": "https://github.com/Hpyorange/TeamProfileGenerator#readme",
-  "dependencies": {
-    "inquirer": "^9.1.4",
+  "devDependencies": {
     "jest": "^29.2.2"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.4"
   }
 }

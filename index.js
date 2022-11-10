@@ -1,17 +1,18 @@
 const generateHtml= require('./src/generateHtml');
 
 const fs = require("fs")
-const inquirer = require("inquirer");
+const inquirer = require('inquirer');
+
 
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
-const { inherits } = require('util');
+
 
 const team = [];
 
 const managerInfo = () =>{
-    return inquirer.createPromptModule([
+    return inquirer.prompt([
         {
             type:'input',
             name:'name',
@@ -54,7 +55,7 @@ const managerInfo = () =>{
         },
         {
             type:'input',
-            name:'officeNum',
+            name:'officeNumber',
             message:`Please Enter manager's office number `,
             validate: value => {
                 if (value) {
@@ -67,8 +68,8 @@ const managerInfo = () =>{
         }
     ])
     .then(userInput=>{
-        const{name,id,email,officeNum} = userInput;
-        const manager = new Manager(name,id,email,officeNum);
+        const{name,id,email,officeNumber} = userInput;
+        const manager = new Manager(name,id,email,officeNumber);
         team.push(manager);
         console.log(`Manger Info: ${manager}`)
     })
@@ -157,25 +158,26 @@ const teamMember=()=>{
     {
         type:'confirm',
         name:'addMore',
-        message:'Adding more team members?'
+        message:'Adding more team members?',
+        default: false
     }
 ])
 .then( teamMemberInfo => {
     let{name,id,email,role,github,school,addMore} = teamMemberInfo;
-    let teamMember;
+    let teamMembers;
 
     if (role === "Engineer") {
-        teamMember = new Engineer (name, id, email, github);
+        teamMembers = new Engineer (name, id, email, github);
 
-        console.log(teamMember);
+        console.log(teamMembers);
 
     } else if (role === "Intern") {
-        teamMember = new Intern (name, id, email, school);
+        teamMembers = new Intern (name, id, email, school);
 
-        console.log(teamMember);
+        console.log(teamMembers);
     }
 
-    team.push(teamMember); 
+    team.push(teamMembers); 
 
     if(addMore){
         return teamMember(team);
