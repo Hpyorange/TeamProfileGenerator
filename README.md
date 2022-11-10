@@ -2,7 +2,7 @@
   ![Github licence](http://img.shields.io/badge/license-GPLv3-blue.svg)
 
   ## Description
-  This application is a team profile generator.User can create a webpage that display team's info by answering questions in the command line using node js
+  This application is a team profile generator. Users can create a webpage that displays the team's info by answering questions in the command line using node js.
 
   ## Web_Img
   ![Web brief](dist/img/team-profile-sample.png "Web sample")
@@ -16,7 +16,7 @@
   * [Questions](#questions)
 
   ## Installation 
-  clone or download this repository. Use the command 'npm i' to install all required package.(require Node)
+  Clone or download this repository. Use the command 'npm i' to install all required packages.(require Node)
 
   ## Usage 
   Use the command 'node index.js" to start the app. Then answer all the questions.
