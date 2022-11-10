@@ -1,0 +1,41 @@
+.myCard{
+    display: grid;
+    grid-template-rows: 140px 240px;
+    grid-template-areas: 'img' 'text';
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    border-right: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(14px);
+    background: rgba(27, 25, 25, 0.2);
+}
+
+.c-text{
+    grid-area: text;
+    margin:25px;
+    color: aliceblue;
+    text-shadow:5px 5px 15px rgba(0, 0, 0, 0.9);
+    font-size: 20px;
+}
+
+.c-img{
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 280px;
+    height: 100%;
+}
