@@ -8,9 +8,9 @@ const engineerCard = engineer =>{
 
         <div class="c-text" >
             <h3>Engineer:${engineer.name}</h3>
-            <p class='id'>ID:${engineer.id}</p>
-            <p class="email">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
-            <p class="github">Github: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
+            <p><i class="fa-solid fa-id-card"></i> <span>ID:</span> ${engineer.id}</p>
+            <p><i class="fa-solid fa-envelope"></i> <span>Email:</span><br><a href="mailto:${engineer.email}">${engineer.email}</a></p>
+            <p><i class="fa-brands fa-github"></i> <span>Github:</span> <a href="https://github.com/${engineer.github}" target="_blank">${engineer.github}</a></p>
         </div>
 
     </div>
@@ -27,9 +27,9 @@ const internCard = intern =>{
         
         <div class="c-text" >
             <h3>Intern:${intern.name}</h3>
-            <p class='id'>ID:${intern.id}</p>
-            <p class="email">Email:<a href="mailto:${intern.email}">${intern.email}</a></p>
-            <P class="github">School:${intern.school}</P>
+            <p><i class="fa-solid fa-id-card"></i> <span>ID:</span> ${intern.id}</p>
+            <p><i class="fa-solid fa-envelope"></i> <span>Email:</span><br><a href="mailto:${intern.email}">${intern.email}</a></p>
+            <P><i class="fa-solid fa-school"></i> <span>School:</span> ${intern.school}</P>
         </div>
     </div>
     `
@@ -45,9 +45,9 @@ const managerCard = manager =>{
 
         <div class="c-text" >
             <h3>Manager: ${manager.name}</h3>
-            <p class='id'>ID:${manager.id}</p>
-            <p class="email">Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
-            <p class="office">Office Number: ${manager.officeNumber}</p>
+            <p><i class="fa-solid fa-id-card"></i> <span>ID:</span> ${manager.id}</p>
+            <p><i class="fa-solid fa-envelope"></i> <span>Email:</span><br><a href="mailto:${manager.email}">${manager.email}</a></p>
+            <p><i class="fa-solid fa-building"></i> <span>Office Number:</span> ${manager.officeNumber}</p>
         </div>
 
     </div>

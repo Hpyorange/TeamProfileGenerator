@@ -190,7 +190,7 @@ const teamMember=()=>{
 
 const writeFile = data =>{
     fs.writeFile('./dist/index.html',data,err=>
-    err ? console.error(err) : console.log('The team profile has been successfully created! 😋'))
+    err ? console.error(err) : console.log('The team profile has been successfully created! 😋, Check the file in dist folder.'))
 }
 
 function init() { 

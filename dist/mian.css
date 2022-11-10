@@ -30,13 +30,13 @@ body{
     grid-template-areas: 'img' 'text';
     border-radius: 8px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-    text-align: center;
+    /* text-align: center; */
     border-top: 1px solid rgba(255,255,255,0.5);
     border-left: 1px solid rgba(255,255,255,0.5);
     border-bottom: 1px solid rgba(255,255,255,0.3);
     border-right: 1px solid rgba(255,255,255,0.3);
     backdrop-filter: blur(14px);
-    background: rgba(27, 25, 25, 0.6);
+    background: rgba(230, 227, 227, 0.6);
 }
 
 
@@ -44,9 +44,13 @@ body{
 .c-text{
     grid-area: text;
     margin:25px;
-    color: aliceblue;
-    text-shadow:5px 5px 15px rgba(0, 0, 0, 0.9);
+    color: rgb(3, 7, 14);
+    text-shadow:5px 5px 15px rgba(100, 99, 99, 0.9);
     font-size: 16px;
+}
+
+.c-text span{
+    font-weight: 600;
 }
 
 .c-text a{
