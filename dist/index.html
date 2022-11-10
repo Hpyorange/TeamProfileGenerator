@@ -1,17 +1,20 @@
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Team Profile</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-        <link rel="stylesheet" href="mian.css">
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="mian.css">
+</head>
+
+<body>
+
+    <div class="container flex-column align-content-center justify-content-center ">
 
         <div class="text-center mt-4 title">
 
@@ -20,25 +23,64 @@
         </div>
 
             <div class="swiper mySwiper d-flex align-content-center col-10">
+
                 <div class="swiper-wrapper">
                     
-    <div class="col-4 myCard swiper-slide">
-        <div class="c-img" id="manager"></div>
+    <div class="col-3 myCard swiper-slide">
+
+        <div class="c-img" >
+            <img src="./img/manager.png">
+        </div>
+
         <div class="c-text" >
-            <h2>jsaper</h2>
-            <p class='id'>22</p>
-            <p class="email">jsape@gmail.com</p>
-            <P class="github">213</P>
+            <h3>Manager: Jasper</h3>
+            <p class='id'>ID:11</p>
+            <p class="email">Email: <a href="mailto:jaspercheng2022@gmail.com">jaspercheng2022@gmail.com</a></p>
+            <p class="office">Office Number: 202</p>
+        </div>
+
+    </div>
+    
+    <div class="col-3 myCard swiper-slide">
+
+        <div class="c-img" id="engineer">
+            <img src="./img/engineer.png">
+        </div>
+
+        <div class="c-text" >
+            <h3>Engineer:Mort</h3>
+            <p class='id'>ID:13</p>
+            <p class="email">Email: <a href="mailto:mort@gmail.com">mort@gmail.com</a></p>
+            <p class="github">Github: <a href="https://github.com/hpyorange">hpyorange</a></p>
+        </div>
+
+    </div>
+    
+    <div class="col-3 myCard swiper-slide">
+
+        <div class="c-img" id="intern">
+            <img src="./img/intern.png">
+        </div>
+        
+        <div class="c-text" >
+            <h3>Intern:John</h3>
+            <p class='id'>ID:15</p>
+            <p class="email">Email:<a href="mailto:john155@hotmail.com">john155@hotmail.com</a></p>
+            <P class="github">School:UoT</P>
         </div>
     </div>
     
-    <div class="col-4 myCard swiper-slide">
-        <div class="c-img" id="engineer"></div>
+    <div class="col-3 myCard swiper-slide">
+
+        <div class="c-img" id="intern">
+            <img src="./img/intern.png">
+        </div>
+        
         <div class="c-text" >
-            <h2>teae</h2>
-            <p class='id'>223</p>
-            <p class="email">teadssa@gmail.com</p>
-            <P class="github">hpeqwr</P>
+            <h3>Intern:Jason</h3>
+            <p class='id'>ID:22</p>
+            <p class="email">Email:<a href="mailto:jason411@gmail.com">jason411@gmail.com</a></p>
+            <P class="github">School:BU</P>
         </div>
     </div>
     
@@ -51,11 +93,12 @@
             </div>
 
 
-    </body>
+    </div>
+</body>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="./main.js"></script>
 
-    </html>
+</html>
     
